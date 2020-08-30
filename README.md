@@ -1,4 +1,4 @@
-# Redes1-Práctica1_201700886
+# Redes1-Práctica2_201700886
 La practicá una consiste en realizar una red de computadoras pequeña usando diversas interfaces, la 
 manera en la que se comprueba que la conexión sea correcta entre los equipos es con el comando **ping** hacia una ip de algú equipo de la 
 red, fue implementado en **GNS3** se utilizó la imagen **C3725** como router ademas la computadora virtualizada corre en **vmware** usando **tiny core**, al router se 
@@ -37,7 +37,7 @@ Se conectaron 3 Switch a un router principal, se dividio en 3 subrredes.
 > Red de informatica, tenia una pc virtualizada
 > Red de ventas tenia 3 computadoras
 > Red de Finanzas tenia 2 computadoras
-![Contribution guidelines for this project](Practica1/imagenes/Red.PNG)
+![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/Red.png)
 ### Configuración Individual De Cada Componente
 
 - **Configuración De La Interfaz Del Router**
@@ -45,7 +45,7 @@ Se conectaron 3 Switch a un router principal, se dividio en 3 subrredes.
   - **ena**
   - **sh ip int bri** se nos mostrara la informacion de las interfaces del router
   
- ![Contribution guidelines for this project](Practica1/imagenes/CR1.PNG)
+ ![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/CR1.PNG)
   
   - **configure terminal**
   - **int fa 0/0** para entrar a la interfaz 0/0
@@ -54,27 +54,27 @@ Se conectaron 3 Switch a un router principal, se dividio en 3 subrredes.
   - **exit**
   - **write** para guardar la configuracion
   
-  ![Contribution guidelines for this project](Practica1/imagenes/CR2.PNG)
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/CR2.PNG)
   
   Esa manera de configurar corresponde a los 2 switch que se conectan al router, los switch se concetan desded su puerto ethernet 0 al puerto fast ehternet del router     correspondiente,   se eligio diferente GATEWAY en cada interfaz del router para no incurrir en problemas de una dirección ip repetida
 
 - **Configuración De Las VPC**
-![Contribution guidelines for this project](Practica1/imagenes/VPC1.PNG)
-![Contribution guidelines for this project](Practica1/imagenes/VPC2.PNG)
+![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/VPC1.PNG)
+![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/VPC2.PNG)
 
   configurar las VPC en GNS3 es bastante sencillo y rapido solo se necesitan 2 comandos, abrimos la VPC con doble click y escribimos:
   - **ip 192.168.10.10/26 192.168.10.1** con eso indicamos que la VPC tendrá la dirección ip 192.168.10.10 con mascara de subred 255.255.255.192 y que su gateway es de 192.168.10.1
   - **save** para guardar la condiguración
   - **ping 192.168.10.1** para comprobar la conección correcta al Gateway.
- ![Contribution guidelines for this project](Practica1/imagenes/VPC3.PNG)
+ ![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/VPC3.PNG)
 - **Configuración De La PC Virtualizada**
 
   iniciamos la pc virtualizada, le damos doble click y empezará a cargar VMWARE workstation, cuando termine de cargar se debe hacer lo siguiente.
   - Click Derecho y abrimos Control Panel que está adentro de System Tools
-  ![Contribution guidelines for this project](Practica1/imagenes/PC1.PNG)
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/PC1.PNG)
   - Se abrira una ventana y se le da click en Network para abrir una nueva ventana
-  ![Contribution guidelines for this project](Practica1/imagenes/PC2.PNG)
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/PC2.PNG)
   - En esta nueva ventana se escribe la dirección ip que la maquina tendrá aplicamos los cambios y abrimos un terminal, en aplications y luego terminal.
-  ![Contribution guidelines for this project](Practica1/imagenes/PC3.PNG)
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/PC3.PNG)
   - En el terminal escribimos **ping 192.168.10.129** para comprobar que la conexión con el gateway está correcta.
-  ![Contribution guidelines for this project](Practica1/imagenes/PC4.PNG)
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/PC4.PNG)
