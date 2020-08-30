@@ -78,3 +78,30 @@ Se conectaron 3 Switch a un router principal, se dividio en 3 subrredes.
   ![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/PC3.PNG)
   - En el terminal escribimos **ping 192.168.10.129** para comprobar que la conexión con el gateway está correcta.
   ![Contribution guidelines for this project](Redes1-Practica2_201700886/imagenes/PC4.PNG)
+  
+  ### Reportes
+  
+  ### Captura De Paquetes
+  #### Finanzas1
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/Imagenes/Reportes/Finanzas1.PNG)
+  #### Finanzas2
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/Imagenes/Reportes/Finanzas2.PNG)
+  
+  #### Ventas1
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/Imagenes/Reportes/Ventas1.PNG)
+  #### Ventas2
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/Imagenes/Reportes/Ventas2.PNG)
+  #### Ventas3
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/Imagenes/Reportes/Ventas3.PNG)
+  
+  #### Informatica1
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/Imagenes/Reportes/Informatica1.PNG)
+  
+  ### Dominios De Broadcast
+  #### en total fueron 3
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/Imagenes/TopoDB.png)
+  
+  ### Dominios De Colision
+  #### en total fueron 9
+  ![Contribution guidelines for this project](Redes1-Practica2_201700886/Imagenes/TopoDC.png)
+  
